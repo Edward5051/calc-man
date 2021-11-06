@@ -12,7 +12,7 @@ buttons.map ( button => {
             
             case '=':
                 try{
-                    display.innerText = eval(display.innertext);
+                    display.innerText = window.Function(display.innertext);
                 } catch {
                     display.innerText = 'Error!';
                 }
